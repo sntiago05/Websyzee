@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+:root {
+  --fonts-principal: "IBM Plex Sans", sans-serif;
+  --color-background: #f2f2f2;
+  --color-black: #0d0d0d;
+  --color-white: #ffff;
+  --color-fontBlack: #0000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fonts-principal);
+}
+
+.container-creatividad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: var(--color-white);
+  margin-top: 100px;
+}
+
+.img-confianza img {
+  width: 628.25px;
+  height: 639.59px;
+}
+
+.section-creatividad {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  position: relative;
+}
+
+.creatividad {
+  display: flex;
+  background-image: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1077px;
+  height: 598px;
+  padding: 40px;
+  gap: 3.5rem;
+}
+
+.creatividad::after {
+  content: "";
+  position: absolute;
+  top: 53%;
+  display: block;
+  background-color: var(--color-black);
+  height: 2px;
+  width: 52%;
+}
+.contenido-creatividad h2 {
+  font-size: 11vh;
+}
+.contenido-creatividad p {
+  margin-top: 20px;
+  font-size: 2.2rem;
+  width: 605px;
+}
+
+.container-creatividad span {
+  font-size: 2rem;
+  position: absolute;
+  right: 70%;
+  bottom: 6%;
+}
+
+.ilustracion-creatividad img {
+  width: 130px;
+  height: 338px;
+}
+
+.mantenimiento {
+  display: flex;
+  align-items: center;
+  height: 201px;
+  width: 402px;
+  background-image: url("/public//mesh-gradient3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  right: 10%;
+  bottom: 0%;
+  border-radius: 25px;
+  padding: 20px;
+}
+.img-mantenimiento img {
+  width: 151px;
+}
+.expectativa {
+  display: flex;
+  align-items: center;
+  height: 201px;
+  width: 649px;
+  background-image: url("/public/mesh-gradient1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: 0%;
+  margin-top: 610px;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.img-expectativa img {
+  width: 136px;
+}
+.logotipo-websyze {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+}
+
+.logotipo-websyze img {
+  width: 30px;
+}
+
+.respuesta-rapida {
+  display: flex;
+  align-items: center;
+  height: 201px;
+  width: 402px;
+  background-image: url("/public/mesh-gradient2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  right: 10%;
+  margin-top: 610px;
+  border-radius: 25px;
+  padding: 20px;
+  gap: 1rem;
+}
+
+.img-respuesta img {
+  width: 139px;
+}

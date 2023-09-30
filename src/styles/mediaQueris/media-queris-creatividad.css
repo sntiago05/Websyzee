@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+:root {
+  --fonts-principal: "IBM Plex Sans", sans-serif;
+  --color-background: #f2f2f2;
+  --color-black: #0d0d0d;
+  --color-white: #ffff;
+  --color-fontBlack: #0000;
+  --color-gris: #bfbfbf;
+  --color-gris-oscuro: #737373;
+  --color-negro-claro: #292929;
+}
+
+/* 2xl */
+@media screen and (max-width: 1700px) {
+}
+
+/*2xl*/
+
+@media screen and (max-width: 1575px) {
+}
+
+/* lg */
+@media screen and (max-width: 1220px) {
+}
+
+/* sm */
+@media screen and (max-width: 743px) {
+}
+
+/* xs */
+@media screen and (max-width: 620px) {
+}
+
+@media screen and (max-width: 577px) {
+}
+
+@media screen and (max-width: 457px) {
+}
