@@ -1,0 +1,93 @@
+---
+import "../styles/websyze.css";
+import { gsap } from "gsap";
+---
+
+<div id="main-p">
+  <div class="contenidoExperiencia">
+    <h2>Vive una buena experiencia de usuario.</h2>
+    <p>
+      A continuación, realizaremos un breve recorrido personalizado para
+      identificar las necesidades de tu sitio web. Deberás seleccionar el tipo
+      de sitio web que mejor se adapte a las metas de tu empresa, marca o
+      emprendimiento. Websyze ofrece una amplia gama de opciones de diseño web.
+      Si no encuentras la opción que buscas, no dudes en proporcionar un breve
+      resumen de tu proyecto, y con gusto discutiremos las posibilidades
+      disponibles para tu proyecto.
+    </p>
+  </div>
+</div>
+<div id="main">
+  <div id="top">
+    <h2 id="top-h2">Websyze</h2>
+  </div>
+  <div id="center">
+    <div class="content">
+    </div>
+  </div>
+  <div id="bottom">
+    <h2 id="bottom-h2">Websyze</h2>
+  </div>
+</div>
+
+<script>
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#main",
+      //  markers:true,
+      start: "50% 50%",
+      end: "100% 50%",
+      scrub: 2,
+      pin: true,
+    },
+  });
+  tl.to(
+    "#top",
+    {
+      top: "-50%",
+    },
+    "a"
+  )
+    .to(
+      "#bottom",
+      {
+        bottom: "-50%",
+      },
+      "a"
+    )
+    .to(
+      "#top-h2",
+      {
+        top: "60%",
+      },
+      "a"
+    )
+    .to(
+      "#bottom-h2",
+      {
+        bottom: "-30%",
+      },
+      "a"
+    )
+    .to(
+      "#center-h2",
+      {
+        top: "-30%",
+      },
+      "a"
+    )
+    .to(".content", {
+      delay: -0.2,
+      marginTop: "0%",
+    });
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+  integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+  integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>

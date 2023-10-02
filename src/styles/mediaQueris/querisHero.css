@@ -7,14 +7,15 @@
 }
 
 /* 2xl */
-@media screen and (max-width: 1700px) {
-  .circulo {
-    width: 750px;
+@media screen and (max-width: 1700px){
+  .circulo{
     position: absolute;
     bottom: 0%;
   }
-  .circulo img {
-    width: 450px;
+  footer{
+    position: relative;
+    top: 83px;
+    margin: 0;
   }
 }
 
