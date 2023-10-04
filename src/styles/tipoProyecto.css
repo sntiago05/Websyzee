@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+background-color: black;
+}
+.container{
+  height: 100%;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.2fr 2.2fr 0.6fr; 
+  gap: 40px 0px; 
+  grid-template-areas: 
+    "header header header"
+    "content content content"
+    ". footer .";
+    background-color: black;
+  
+}
+.title {
+  height: auto;
+  grid-area: header
+}
+.title_text{
+  text-align: center;
+}
+
+.btn_text{
+  color: var(--color-white);
+}
+.footer{
+  grid-area: footer; 
+  justify-self: center;
+  background-color: black;
+  margin-top: 20px;
+  height: 100px;
+}
+.footer_btn{
+  align-self: baseline;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 100px;
+  background-color: black;
+  border: none;
+}
+.content {
+  height: auto;
+  grid-area: content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+.content_card {
+  position: relative;
+  width: 516px;
+  height: 651px;
+  background-color: var(--color-background);
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.card1_figure1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.card1_lettp {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  height: 30%;
+  width: 100%;
+}
+.card1_text {
+  color: var(--color-black);
+  margin-top: 70%;
+  text-align: center;
+  font-size: 30px;
+}
+.card1_btn {
+  margin-top: 13%;
+  margin-left: 40%;
+}
+.btns{
+  background-color: black;
+  width: 100px;
+  height: 35px;
+  border-radius: 35px;
+  font-size: 20px;
+  border: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.card2_figure2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.card2_storeicon{
+  position: absolute;
+  height: 200px;
+  bottom: 0;
+  margin-bottom: 40px;
+  margin-left: 40px;
+
+}
+.card2_btn {
+  margin-top: 12%;
+  margin-left: 40%;
+}
+.card2_text{
+  color: var(--color-black);
+  margin-top: 70px;
+  text-align: center;
+  font-size: 27px;
+  font-family: "IBM Plex Sans";
+}
+.card3{
+  background-color: #d2f90a;
+}
+.card3_lettersweb{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 25px;
+}
+.card3_text{
+  position: absolute;
+  color: var(--color-black);
+  text-align: center;
+  font-size: 25px;
+  top: 0;
+  margin-top: 70px;
+}
+.card3_btn{
+  position: absolute;
+  margin-top: 33%;
+  left: 40%;
+}
